@@ -1,0 +1,102 @@
+@font-face {
+    font-family: charlotte;
+    src: url(../assets/Charlotte.otf);
+}
+@font-face {
+    font-family: machine;
+    src: url(../assets/Type\ Machine.ttf);
+}
+
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: machine;
+
+
+    h2{
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+    .tituloUno{
+        color: rgb(71, 117, 105);
+        font-family: charlotte;
+        font-size: 6rem;       
+        font-weight: 500;
+        text-shadow: 2px 2px white ;
+        z-index: 999;          
+        //-webkit-text-stroke: 1px white;      
+        
+    }
+
+    img{
+        width: 70vw;
+        height: auto;
+        margin-top: -50px;
+    }
+
+
+
+}
+
+
+
+.paginaDos{
+    position: relative;
+    width: 100vw;
+    height: auto;
+
+    .imgPagDos{
+        width: 100%;
+        height: auto;
+        
+    }    
+
+    .sectionTexto2{
+        position: absolute;
+        top: 7.5%;
+        left: 15%;
+        color: white;
+        font-family: machine;
+        display: table;
+        margin: auto;
+    }
+
+    p{
+        float: left;
+        color: white;
+        position: relative;
+        font-size: 1rem;
+    }
+
+    p span{
+        position: absolute;
+        right: 0;
+        width: 0;
+        background: rgb(71, 117, 105) ;
+        border-left: 1px solid white;
+
+        animation: maquina 6s infinite  steps(31);
+    }
+
+    @keyframes maquina{
+        from{
+            width: 100%;
+        }
+        to{
+            width: 0;
+        }
+    }
+    
+}
+
+.sectionTexto3 {
+    font-family: charlotte;
+    font-size: 350%;
+    font-weight:100;
+    position: absolute;
+    top: 20%;
+    left: 7%;
+}
